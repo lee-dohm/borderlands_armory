@@ -1,4 +1,4 @@
-borderlands_armory
+Borderlands Armory
 ==================
 
-Database, website and set of utilities for playing around with ideas regarding Borderlands 2
+A Ruby on Rails website for playing around with creating utilities for Borderlands 2.
