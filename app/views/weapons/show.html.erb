@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @weapon.name %>
+</p>
+
+<p>
+  <b>Damage:</b>
+  <%= @weapon.damage %>
+</p>
+
+<p>
+  <b>Bullets per shot:</b>
+  <%= @weapon.bullets_per_shot %>
+</p>
+
+<p>
+  <b>Accuracy:</b>
+  <%= @weapon.accuracy %>
+</p>
+
+<p>
+  <b>Fire rate:</b>
+  <%= @weapon.fire_rate %>
+</p>
+
+<p>
+  <b>Reload speed:</b>
+  <%= @weapon.reload_speed %>
+</p>
+
+<p>
+  <b>Magazine:</b>
+  <%= @weapon.magazine %>
+</p>
+
+<p>
+  <b>Rounds per shot:</b>
+  <%= @weapon.rounds_per_shot %>
+</p>
+
+
+<%= link_to 'Edit', edit_weapon_path(@weapon) %> |
+<%= link_to 'Back', weapons_path %>

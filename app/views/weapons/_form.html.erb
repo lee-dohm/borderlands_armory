@@ -1,0 +1,49 @@
+<%= form_for(@weapon) do |f| %>
+  <% if @weapon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@weapon.errors.count, "error") %> prohibited this weapon from being saved:</h2>
+
+      <ul>
+      <% @weapon.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :damage %><br />
+    <%= f.number_field :damage %>
+  </div>
+  <div class="field">
+    <%= f.label :bullets_per_shot %><br />
+    <%= f.number_field :bullets_per_shot %>
+  </div>
+  <div class="field">
+    <%= f.label :accuracy %><br />
+    <%= f.text_field :accuracy %>
+  </div>
+  <div class="field">
+    <%= f.label :fire_rate %><br />
+    <%= f.text_field :fire_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :reload_speed %><br />
+    <%= f.text_field :reload_speed %>
+  </div>
+  <div class="field">
+    <%= f.label :magazine %><br />
+    <%= f.number_field :magazine %>
+  </div>
+  <div class="field">
+    <%= f.label :rounds_per_shot %><br />
+    <%= f.number_field :rounds_per_shot %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
